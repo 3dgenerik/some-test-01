@@ -1,0 +1,89 @@
+body{
+    font-family: 'Quicksand';
+    margin:0px;
+}
+
+.container{
+    height:100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* grid-template-rows: auto 1fr auto; */
+    grid-template-rows: 60px 1fr 60px;
+    
+
+}
+
+.container div{
+    /* padding:1rem; */
+}
+
+.header{
+    background: linear-gradient(0deg, rgb(34, 88, 153) 0%, rgba(0,212,255,1) 100%);
+    grid-column: 1/-1;
+
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left:1rem;
+    padding-right:1rem;
+}
+
+.header-menu{
+    display: flex;
+    gap: 1rem;
+
+}
+
+.cover{
+    background: linear-gradient(0deg, rgb(153, 34, 34) 0%, rgb(255, 0, 0) 100%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:10px;
+    grid-auto-flow: dense;
+    padding: 10px;
+}
+
+.zone{
+    font-size: 5rem;
+    background-color: rgba(255, 255, 255, .3);
+    border: 1px solid rgb(59, 0, 0);
+    border-radius: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green{
+    grid-column: span 2;
+}
+
+.red{
+    grid-row: span 2;
+}
+
+.blue{
+}
+
+.projectGrid{
+    padding:1rem;
+    background: linear-gradient(0deg, rgb(153, 147, 34) 0%, rgb(255, 234, 0) 100%);
+}
+
+.footer{
+    background: linear-gradient(0deg, rgb(34, 153, 38) 0%, rgb(30, 255, 0) 100%);
+    grid-column: 1/-1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    grid-column: 1/-1;
+    cursor: pointer;
+}
+
+.padd{
+    padding: 20px;
+    color: red;
+}
